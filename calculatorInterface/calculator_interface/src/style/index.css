@@ -5,3 +5,11 @@
 .noMargin {
   margin:0;
 }
+
+.navLink li{
+  display: inline;
+  padding: 3px;
+  margin: 1px;
+  border: 1px solid lightgrey;
+  border-radius: 3px
+}
