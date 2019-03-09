@@ -1,6 +1,6 @@
 from flask import Flask
 from flask import request
-from models.models import calculator
+from models.models import calculator, getTxtSaved
 
 app = Flask(__name__)
 
@@ -14,5 +14,11 @@ def home():
 @app.route('/calc', methods=['GET'])
 def calc():
     """ route qui calcul le string qui arrive en requete """
-    input = request.args.get('calc', default = '', type=str)
+    input = request.args.get('calc', default='', type=str)
     return (calculator(input))
+
+
+@app.route('/history', methods=['GET'])
+def history():
+    """ Route qui affiche tout les calculs effectué """
+    return (getTxtSaved())
