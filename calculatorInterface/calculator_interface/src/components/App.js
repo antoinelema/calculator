@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link, Route, BrowserRouter } from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.css'
 import '../style/index.css'
 
 import Home from './Home'
