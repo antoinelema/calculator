@@ -20,7 +20,7 @@ export default (props)=>{
     .catch(err=>{
       console.log("error");
     })
-  })
+  },[],) //[]ne refait le useeffect que quand qqchose change
 
 
 
